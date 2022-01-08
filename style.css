@@ -8,13 +8,20 @@ ul {
 }
 a {
   color: currentColor;
+  cursor: pointer;
   text-decoration: none;
 }
 :root,body {
   background-color: #333;
+  font-display: swap;
   font-family: 'Open Sans',Arial, Helvetica, sans-serif;
-  font-size: 16px; /*web.dev*/
+  font-size: clamp(1rem,.75rem + 1.5vw,2rem); /*web.dev😄*/
   min-height: 100vh; /*confirm on web.dev*/
+}
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .navbar {
   color: #fff;
@@ -24,4 +31,22 @@ a {
 }
 .navbar a {
   font-size: 1.5rem;
+}
+/* button {
+  background-color: #333;
+  border-radius: 8px;
+  color: #fff;
+  padding: 16px;
+} */
+main > a {
+  background-color: #333;
+  border: 2px solid ;
+  border-radius: 8px;
+  color: #fff;
+  padding: 16px;
+}
+main nav ul li {
+  color: #fff;
+  margin-block-end: 8px;
+  text-transform: uppercase;
 }
